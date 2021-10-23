@@ -16,12 +16,17 @@
 .item-container {
     height: 120px;
     width: 360px;
+    position: relative;
 }
 .titlehead {
     margin: 0;
     font-size: 100px;
 }
 .keys {
+    height: 80px;
+    width: 70px;
+}
+.boxes {
     height: 80px;
     width: 70px;
 }

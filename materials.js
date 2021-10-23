@@ -36,3 +36,4 @@ class Discount {
     }
 }
 
+k = new Key(10);
