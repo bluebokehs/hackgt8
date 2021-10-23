@@ -15,16 +15,18 @@
       margin-right: 10px;
     }
   </style>
-  <script>
-    
-  </script>
+  <script src="materials.js"></script>
 </head>
 <body>
   <h1 style="text-align: center;">Your Balance</h1>
   <div class="materials-container">
     <h4>Materials</h4>
-    <div class="item-container">
-
+    <div class="item-container" style="display: inline-block; text-align: center;">
+      <div class="keys">
+        <img src="images/key.png" height="60px" width="60px" style="margin-left: auto; margin-right: auto;">
+        <p id="keysNum">NaN</p>
+        <button onclick="printKeys()">Hi</button>
+      </div>
     </div>
   </div>
   <div class="materials-container">
@@ -40,6 +42,13 @@
     <a href="popup_balance.html">Balance</a>
     <a href="popup_settings.html">Settings</a>
   </div>
+  <script>
+    k = new Key(4);
+    function printKeys() {
+      let str = document.getElementById("keysNum").innerHTML; 
+      document.getElementById("keysNum").innerHTML = str.replace("NaN", k.getAmount);;
+    }
+  </script>
   <script src="popup.js"></script>
 </body>
 </html>
