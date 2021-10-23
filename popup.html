@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Supple</title>
   <style>
     body {
@@ -16,20 +17,71 @@
   </style>
 </head>
 <body>
+  <!--Top of Home Page-->
   <div class="container-top" style="text-align: center;">
-    <p><a>Supple</a></p>
-    <p>Test</p>
+    <p class="titlehead">Supple</p>
   </div>
   <div class="button-menu" style="float: left;">
     <a href="popup_daily.html">Daily Rewards</a>
-    <a href="popup_inventory.html" style="float: right;">Inventory</a>
+    <a href="popup_balance.html" style="float: right;">Items</a>
   </div>
-  <div class="container-body">
 
+  <!--Stores-->
+  <div class="container-body" style="text-align: center;">
+    <!--Container for single store-->
+    <div class="store-div">
+      <!--Image Icon-->
+      <a style="text-decoration: none;" href="">
+        <img alt="Amazon" src="images/amazon.png" width="20" height="20">
+        Amazon
+      </a>
+    </div>
+
+    <div class="store-div">
+      <a style="text-decoration: none;" href="">
+        <img alt="Target" src="images/target.png" width="20" height="20">
+        Target
+      </a>
+    </div>
+
+    <div class="store-div">
+      <a style="text-decoration: none;" href="">
+        <img alt="Kohl's" src="images/khols.png" width="20" height="20">
+        Khol's
+      </a>
+    </div>
+
+    <div class="store-div">
+      <a style="text-decoration: none;" href="">
+        <img alt="Walmart" src="images/walmart.png" width="20" height="20">
+        Walmart
+      </a>
+    </div>
+
+    <div class="store-div">
+      <a style="text-decoration: none;" href="">
+        <img alt="McDonald's" src="images/mcdonalds.png" width="20" height="20">
+        McDonald's
+      </a>
+    </div>
+
+    <div class="store-div">
+      <a style="text-decoration: none;" href="">
+        <img alt="Chick-fil-a" src="images/chickfila.png" width="20" height="20">
+        Chick-fil-a
+      </a>
+    </div>
   </div>
+
+  <!--Display for Balance-->
+  <div class="balance" style="text-align: center;">
+    <p>Supple Balance: X Total Keys</p>
+  </div>
+
+  <!--General and global footer-->
   <div class="footer" style="text-align: center;">
     <a href="popup.html">Home</a>
-    <a href="popup_stores.html">Stores</a>
+    <a href="popup_balance.html">Balance</a>
     <a href="popup_settings.html">Settings</a>
   </div>
   <script src="popup.js"></script>
