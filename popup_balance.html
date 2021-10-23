@@ -18,13 +18,13 @@
       display: grid;
       grid-template-columns: auto auto auto auto;
       grid-gap: 10px;
-      background-color: gray;
+      background-color: white;
       padding: 10px;
     }
 
     .grid-container > div {
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: white;
       padding: 20px 0;
     }
   </style>
@@ -32,65 +32,83 @@
 </head>
 <body>
   <h1 style="text-align: center;">Your Balance</h1>
-  <!--
-  <div class="materials-container">
-    <h4>Materials</h4>
-    <div class="item-container" style="text-align: center;">
-      <div class="keys">
-        <img src="images/key.png" height="60px" width="60px" style="margin-left: auto; margin-right: auto;">
-        <p id="keysNum">NaN</p>
-      </div>
-    </div>
-    <div class="item-container" style="text-align: center;">
-      <div class="boxes">
-        <img src="images/key.png" height="60px" width="60px" style="margin-left: auto; margin-right: auto;">
-        <p id="keysNum">NaN</p>
-      </div>
-    </div>
-  </div>
-  <div class="materials-container">
-    <h4>Discounts</h4>
-    <div class="item-container">
-      
-    </div>
-  </div>-->
-  <h4>Materials</h4>
+
+  <h3>Materials</h3>
   <div class="grid-container">
     <div>
+      <p>Keys</p>
       <img src="images/key.png" height="60px" width="60px padding: auto">
       <p id="keysNum">NaN</p>
+      <script>
+        document.getElementById("keysNum").innerHTML = k.getAmount();
+      </script>
     </div>
     <div>
+      <p id="chest1N">Target</p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest1">NaN</p>
+      <script>
+        document.getElementById("chest1").innerHTML = boxes[0].getAmountBoxes();
+        document.getElementById("chest1N").innerHTML = boxes[0].getCompany();
+      </script>
     </div>
     <div>
+      <p id="chest2N"></p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest2">NaN</p>
+      <script>
+        document.getElementById("chest2").innerHTML = boxes[1].getAmountBoxes();
+        document.getElementById("chest2N").innerHTML = boxes[1].getCompany();
+      </script>
     </div>
     <div>
+      <p id="chest3N"></p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest3">NaN</p>
+      <script>
+        document.getElementById("chest3").innerHTML = boxes[2].getAmountBoxes();
+        document.getElementById("chest3N").innerHTML = boxes[2].getCompany();
+      </script>
     </div>
     <div>
+      <p id="chest4N"></p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest4">NaN</p>
+      <script>
+        document.getElementById("chest4").innerHTML = boxes[3].getAmountBoxes();
+        document.getElementById("chest4N").innerHTML = boxes[3].getCompany();
+      </script>
     </div>
     <div>
+      <p id="chest5N"></p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest5">NaN</p>
+      <script>
+        document.getElementById("chest5").innerHTML = boxes[4].getAmountBoxes();
+        document.getElementById("chest5N").innerHTML = boxes[4].getCompany();
+      </script>
     </div>  
     <div>
+      <p id="chest6N"></p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest6">NaN</p>
+      <script>
+        document.getElementById("chest6").innerHTML = boxes[5].getAmountBoxes();
+        document.getElementById("chest6N").innerHTML = boxes[5].getCompany();
+      </script>
     </div>
     <div>
+      <p id="chest7N"></p>
       <img src="images/chest.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+      <p id="chest7">NaN</p>
+      <script>
+        document.getElementById("chest7").innerHTML = boxes[6].getAmountBoxes();
+        document.getElementById("chest7N").innerHTML = boxes[6].getCompany();
+      </script>
     </div>
   </div>
 
-  <h4>Discounts</h4>
+  <h3>Discounts</h3>
   <div class="grid-container">
     <div>
       <img src="images/key.png" height="60px" width="60px padding: auto">
