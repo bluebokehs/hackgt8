@@ -13,7 +13,11 @@
     width: 340px;
     padding: 10px;
 }
-p {
+.item-container {
+    height: 120px;
+    width: 360px;
+}
+.titlehead {
     margin: 0;
     font-size: 100px;
 }
