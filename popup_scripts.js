@@ -28,17 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
         removeElement();
     });
 });
+
 document.addEventListener('DOMContentLoaded', function() {
     var e = document.getElementById('close');
     // onClick's logic below:
     e.addEventListener('click', function() {
         closeSupple();
-    });
-});
-
-$(document).ready(function() {
-    $("#close").click(function() {
-      window.close();
     });
 });
 
