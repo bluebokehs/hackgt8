@@ -7,6 +7,7 @@ public class Discount extends Rewards{
     }
 
     public Discount giveDiscount(String name, int percent) {
-        return Discount(name, percent);
+        Discount d = new Discount(name, percent);
+        return d;
     }
 }

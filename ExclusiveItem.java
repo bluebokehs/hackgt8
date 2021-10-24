@@ -7,6 +7,7 @@ public class ExclusiveItem extends Rewards{
     }
 
     public ExclusiveItem giveExclusiveItem(String name, String description) {
-        return ExclusiveItem(name, description);
+        ExclusiveItem ei = new ExclusiveItem(name, description);
+        return ei;
     }
 }

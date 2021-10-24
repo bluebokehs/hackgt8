@@ -1,19 +1,24 @@
+import java.util.concurrent.ThreadLocalRandom;
 public class Key extends BusinessData {
     private int keyID;
 
 
-    public Key(int keyID) {
+    public Key(String name, int keyID) {
+        super(name);
         this.keyID = keyID;
     }
 
-    public getKey(double transaction, String name) {
-        a = Math.round(Math.random() * 100) / 100.00;
-        if (transaction > 30.0 && a < 0.05) {
-            Key((Math.random() * 100) / 100);
-        } else if (transaction > 75.0 && a < .1) {
-            Key((Math.random() * 100) / 100);
-        } else if (transaction > 150.0 && a < .2) {
-            Key((Math.random() * 100) / 100);
+    public Key getKey(double transaction, String name) {
+        int a = ThreadLocalRandom.current().nextInt(1, 101);
+        if (transaction > 30.0 && a < 5) {
+            Key k = new Key(name, 100);
+            return k;
+        } else if (transaction > 75.0 && a < 10) {
+            Key k = new Key(name, 110);
+            return k;
+        } else if (transaction > 150.0 && a < 20) {
+            Key k = new Key(name, 120);
+            return k;
         } else {
             return null;
         }

@@ -1,5 +1,6 @@
-public class GiftCard {
+public class GiftCard extends Rewards{
     private double value;
+    //private String name;
 
     public GiftCard(String name, double value) {
         super(name);
@@ -7,6 +8,7 @@ public class GiftCard {
     }
 
     public GiftCard giveGiftCard(String name, double value) {
-        return GiftCard(name, value);
+        GiftCard gc = new GiftCard(name, value);
+        return gc;
     }
 }

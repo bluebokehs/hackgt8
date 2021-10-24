@@ -1,4 +1,4 @@
-
+import java.util.concurrent.ThreadLocalRandom;
 public class Box extends BusinessData {
     private int boxID;
     private final double CHANCE = 0.1;
@@ -14,13 +14,16 @@ public class Box extends BusinessData {
     }
 
     public Box giveBox(double transaction, String name) {
-        a = Math.round(Math.random() * 100) / 100.00;
-        if (transaction > 30.0 && a < 0.05) {
-            return Box(name, 100);
-        } else if (transaction > 75.0 && a < .1) {
-            return Box(name, 100);
-        } else if (transaction > 150.0 && a < .2) {
-            return Box(name, 100);
+        int a = ThreadLocalRandom.current().nextInt(1, 101);
+        if (transaction > 30.0 && a < 5) {
+            Box b = new Box(name, 100);
+            return b;
+        } else if (transaction > 75.0 && a < 10) {
+            Box b = new Box(name, 100);
+            return b;
+        } else if (transaction > 150.0 && a < 20) {
+            Box b = new Box(name, 100);
+            return b;
         } else {
             return null;
         }
