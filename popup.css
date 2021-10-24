@@ -31,6 +31,10 @@ mark.light {
   color: #bdbdbd;
 }
 
+.icon {
+  margin: 0px 12px 0px 12px;
+}
+
 .banner-top {
   font-family: Cabin;
   font-style: normal;
@@ -135,6 +139,22 @@ mark.light {
     bottom: 8px;
   }
 
+  .container-body-settings {
+    position: relative;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .container-body-settings h3 {
+    bottom: 8px;
+  }
+
   .company-banner {
       top: 0;
       position: absolute;
@@ -170,6 +190,7 @@ mark.light {
     border-top: 1px solid;
       border-bottom: 1px solid;
       border-color: #eeeeee;
+    position: static;
   }
 
   .balance h3 {
@@ -186,6 +207,8 @@ mark.light {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: static;
+      z-index: 2;
   }
 
   .footer-container {
@@ -213,7 +236,31 @@ mark.light {
   position: relative;
 }
 
+.settings {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  width: 80%;
+  border-radius: 10px;
+}
 
+.option {
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-last {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 /* The circle progress bar */
