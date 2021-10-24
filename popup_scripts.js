@@ -6,6 +6,16 @@ function incCount() {
     document.getElementById("time").innerHTML = count + "%";
     console.log(count);
 }
+
+function removeElement() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
 setInterval(function(){ incCount(); }, 80);
 
 document.getElementById("keysNum").innerHTML = k.getAmount();
