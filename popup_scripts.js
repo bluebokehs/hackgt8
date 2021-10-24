@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+$(document).ready(function() {
+    $("#close").click(function() {
+      window.close();
+    });
+});
+
 setInterval(function(){ incCount(); }, 80);
 
 document.getElementById("keysNum").innerHTML = k.getAmount();
