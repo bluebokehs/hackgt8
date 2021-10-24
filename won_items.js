@@ -1,6 +1,8 @@
 function toggleElement() {
     var x = document.getElementById("myDIV");
     x.style.display = "block";
+    var y = document.getElementById("home_button");
+    y.style.display = "block";
 }
 
 function randomGift() {
