@@ -3,6 +3,7 @@ function toggleElement() {
     document.getElementById("home_button").style.display = "block";
     document.getElementById("hidden").style.display = "block";
     document.getElementById("more_hidden").style.display = "block";
+    document.getElementById("genDIV").style.display = "block";
 }
 
 function randomGift() {
