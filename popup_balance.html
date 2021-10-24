@@ -1,133 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="popup.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="/public/css/all.css" rel="stylesheet"/>
-  <title>Supple</title>
-  <style>
-    body {
-      height: 600px;
-      width: 360px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    .grid-container {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-gap: 10px;
-      background-color: white;
-      padding: 10px;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup_balance.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,400italic,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/public/css/all.css" rel="stylesheet" />
+    <!--load all styles -->
+    <title>Supple</title>
+    <style>
+      body {
+        height: 600px;
+        width: 360px;
+      }
+    </style>
 
-    .grid-container > div {
-      text-align: center;
-      background-color: white;
-      padding: 20px 0;
-    }
-  </style>
-  <script src="materials.js"></script>
-</head>
-<body>
-  <h1 style="text-align: center;">Your Balance</h1>
+    <script src="materials.js"></script>
+  </head>
 
-  <h3>Materials</h3>
-  <div class="grid-container">
-    <div>
-      <p>Keys</p>
-      <img src="images/keyimg.png" height="60px" width="60px padding: auto">
-      <p id="keysNum">NaN</p>
+  <body>
+    <!--Top of Home Page-->
+    <div class="container-top">
+      <div class="top-symbols">
+        <i class="fas fa-circle"></i>
+      </div>
+      <p class="banner-top">Inventory</p>
+      <div class="top-symbols">
+        <i class="fas fa-times-circle"></i>
+      </div>
     </div>
-    <div>
-      <p id="chest1N">Target</p>
-      <a href="popup_video.html"><img src="images/box.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest1">NaN</p>
+    <div class="container-body">
+      <div id="container" class="grid-container">
+        <script type="module" src="inventory.js"></script>
+      </div>
     </div>
-    <div>
-      <p id="chest2N"></p>
-      <a href="popup_video.html"><img src="images/amazonbox.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest2">NaN</p>
-    </div>
-    <div>
-      <p id="chest3N"></p>
-      <a href="popup_video.html"><img src="images/walmartbox.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest3">NaN</p>
-    </div>
-    <div>
-      <p id="chest4N"></p>
-      <a href="popup_video.html"><img src="images/chickfabox.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest4">NaN</p>
-    </div>
-    <div>
-      <p id="chest5N"></p>
-      <a href="popup_video.html"><img src="images/basebox.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest5">NaN</p>
-    </div>  
-    <div>
-      <p id="chest6N"></p>
-      <a href="popup_video.html"><img src="images/basebox.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest6">NaN</p>
-    </div>
-    <div>
-      <p id="chest7N"></p>
-      <a href="popup_video.html"><img src="images/basebox.png" height="60px" width="60px padding: auto"></a>
-      <p id="chest7">NaN</p>
-    </div>
-    <script src="popup_scripts.js"></script>
-  </div>
 
-  <h3>Discounts</h3>
-  <div class="grid-container">
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
+    <!--General and global footer-->
+    <div class="footer" style="text-align: center">
+      <a href="popup_balance.html">Balance</a>
+      <a href="popup.html">Home</a>
+      <a href="popup_settings.html">Settings</a>
     </div>
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>  
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>
-    <div>
-      <img src="images/coupon.png" height="60px" width="60px padding: auto">
-      <p id="disc1">0</p>
-    </div>
-  </div>
-
-  <!--General and global footer-->
-  <div class="balance">
-    <h3>Supple Balance:</h3>
-    <a href="popup_balance.html" style="text-decoration: none;"><h3 class="balance-keys">2 Keys</h3></a>
-  </div>
-
-  <div class="footer">
-    <div class="footer-container">
-      <a href="popup.html" class="footer-icons"><i class="fas fa-house-user"></i></a>
-    <a href="popup_balance.html" class="footer-icons"><i class="fas fa-box-open"></i></a>
-    <a href="popup_settings.html" class="footer-icons"><i class="fas fa-tools"></i></a>
-    </div>
-  </div>
-  <script src="popup.js"></script>
-</body>
+    <script src="popup.js"></script>
+  </body>
 </html>
