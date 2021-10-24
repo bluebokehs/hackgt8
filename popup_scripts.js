@@ -9,12 +9,28 @@ function incCount() {
 
 function removeElement() {
     var x = document.getElementById("myDIV");
+    var y = document.getElementById("myDIV");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
       x.style.display = "none";
     }
-  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById('link');
+    // onClick's logic below:
+    link.addEventListener('click', function() {
+        removeElement();
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById('close');
+    // onClick's logic below:
+    link.addEventListener('click', function() {
+        window.close();
+    });
+});
 
 setInterval(function(){ incCount(); }, 80);
 
