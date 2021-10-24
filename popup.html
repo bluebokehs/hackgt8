@@ -36,14 +36,18 @@
         ></span>
       </div>
       <div class="container-company-mid">
-        <h5 class="container-company-bold">Amazon</h5>
+        <a href="https://www.amazon.com/" target="_blank" style="text-decoration: none;"><h5 class="container-company-bold">Amazon</h5></a>
         <h5>3 Boxes <mark class="light">: 2 Keys</mark></h5>
       </div>
+      
       <div class="container-company-sides">
-        <span class="container-company-circle cright"><div class="container-company-icon-2">
+        <a class="container-company-circle cright" href="popup_balance.html">
+        <span ><div class="container-company-icon-2">
           <i class="fas fa-box-open"></i></div
       ></span>
+        </a>
       </div>
+      
     </div>
 
     <!--
@@ -56,14 +60,27 @@
     <!--Stores-->
     <div class="container-body">
       <div class="company-banner">
-        <p>Recieve a chance to earn a box and key when you make any purchase from Amazon!</p>
+        <div id="myDIV">
+          <p>Receive a chance to earn a box and key when you make any purchase from Amazon!</p>
+        </div>
         <div class="container-body-symbols">
           <i class="fas fa-times"></i>
+          <script>
+            function myFunction() {
+              var x = document.getElementById("myDIV");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
         </div>
       </div>
       <div class="circular">
         <div class="inner"></div>
-        <div class="number">100%</div>
+        <div class="number" id="time">100%</div>
+        
         <div class="circle">
            <div class="bar left">
               <div class="progress"></div>
@@ -79,14 +96,14 @@
     <!--General and global footer-->
     <div class="balance">
       <h3>Supple Balance:</h3>
-      <h3 class="balance-keys">2 Keys</h3>
+      <a href="popup_balance.html" style="text-decoration: none;"><h3 class="balance-keys">2 Keys</h3></a>
     </div>
 
     <div class="footer">
       <div class="footer-container">
         <a href="popup.html" class="footer-icons"><i class="fas fa-house-user"></i></a>
-      <a href="popup_balance.html" class="footer-icons"><i class="fas fa-box-open"></i></a>
-      <a href="popup_settings.html" class="footer-icons"><i class="fas fa-tools"></i></a>
+        <a href="popup_balance.html" class="footer-icons"><i class="fas fa-box-open"></i></a>
+        <a href="popup_settings.html" class="footer-icons"><i class="fas fa-tools"></i></a>
       </div>
     </div>
     <script src="popup.js"></script>

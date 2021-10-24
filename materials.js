@@ -63,7 +63,7 @@ class Discount {
     }
 }
 
-k = new Key(13);
+k = new Key(2);
 boxes = [];
 boxes[0] = new Box("Target", 2);
 boxes[1] = new Box("Amazon", 3);
