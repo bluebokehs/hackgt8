@@ -1,12 +1,12 @@
 function toggleElement() {
-    var x = document.getElementById("myDIV");
-    x.style.display = "block";
-    var y = document.getElementById("home_button");
-    y.style.display = "block";
+    document.getElementById("myDIV").style.display = "block";
+    document.getElementById("home_button").style.display = "block";
+    document.getElementById("hidden").style.display = "block";
+    document.getElementById("more_hidden").style.display = "block";
 }
 
 function randomGift() {
-    let per = Math.random() * 61;
+    let per = (15 + (Math.random() * 61));
     document.getElementById("myDIV").innerHTML = Math.round(per) + "% Off Target Coupon!"
 }
 
