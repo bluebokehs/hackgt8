@@ -10,4 +10,8 @@ public class ExclusiveItem extends Rewards{
         ExclusiveItem ei = new ExclusiveItem(name, description);
         return ei;
     }
+
+    public String toString() {
+        return "Congratulations! You have received an exclusive item " + description + "from " + this.getName();
+    }
 }

@@ -10,4 +10,8 @@ public class Discount extends Rewards{
         Discount d = new Discount(name, percent);
         return d;
     }
+
+    public String toString() {
+        return "Congratulations! You have received a discount for " + percentage + " at " + this.getName();
+    }
 }

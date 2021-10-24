@@ -30,32 +30,39 @@ public class User {
         keys.remove(key);
     }
 
-    public Rewards redeemBox(String name) {
+    public String redeemBox(String name) {
         Box r = null;
         for(int i = 0; i < boxes.size(); i++) {
             if (boxes.get(i).getName().equals(name)) {
                 r = boxes.get(i);
                 boxes.remove(i);
+                System.out.printl("4");
                 break;
             }
         }
-        if (r != null && keys.get(0) != null) {
+        if (r == null && keys.get(0) != null) {
+            System.out.println("3");
             randomReward(name);
         }
         return null;
     }
 
-    public Rewards randomReward(String name) {
+    public String randomReward(String name) {
         int randomNum = ThreadLocalRandom.current().nextInt(1, 101);
         if (randomNum <= 70) {
             Rewards d = new Discount(name, ThreadLocalRandom.current().nextInt(5, 35));
-            return d;
+            return d.toString();
         } else if (randomNum > 70 && randomNum < 99) {
             Rewards g = new GiftCard(name, 15);
-            return g;
+            return g.toString();
         } else {
             Rewards ei = new ExclusiveItem(name, "CONGRATS!! You won an exclusive item!!");
-            return ei;
+            return ei.toString();
         }
+    }
+
+    public String getName(int index) {
+
+        return this.boxes.get(index).getName();
     }
 }

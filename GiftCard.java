@@ -11,4 +11,8 @@ public class GiftCard extends Rewards{
         GiftCard gc = new GiftCard(name, value);
         return gc;
     }
+
+    public String toString() {
+        return "Congratulations! You have received a gift card for " + value + " at " + this.getName();
+    }
 }
