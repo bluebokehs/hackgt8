@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup_balance.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,400italic,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="/public/css/all.css" rel="stylesheet" />
+    <!--load all styles -->
+    <title>Supple</title>
+    <style>
+      body {
+        height: 600px;
+        width: 360px;
+      }
+    </style>
+
+    <script src="materials.js"></script>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <!--Top of Home Page-->
+    <div class="container-top">
+      <div class="icon">
+        <img src="images/icon.png">
+      </div>
+      <p class="banner-top">Inventory</p>
+      <a href="#" id="exit" class="top-symbols">
+        <i class="fas fa-times-circle"></i>
+      </a>
+    </div>
+    <div class="container-body">
+      <div id="container" class="grid-container">
+        <script type="module" src="inventory.js"></script>
+      </div>
+    </div>
+
+    <!--General and global footer-->
+    <div class="balance">
+      <h3>Supple Balance:</h3>
+      <a href="popup_balance.html" style="text-decoration: none;"><h3 class="balance-keys">2 Keys</h3></a>
+    </div>
+
+    <div class="footer">
+      <div class="footer-container">
+        <a href="popup.html" class="footer-icons"
+          ><i class="fas fa-house-user"></i
+        ></a>
+        <a href="popup_balance.html" class="footer-icons"
+          ><i class="fas fa-box-open"></i
+        ></a>
+        <a href="popup_settings.html" class="footer-icons"
+          ><i class="fas fa-tools"></i
+        ></a>
+      </div>
+    </div>
+</html>

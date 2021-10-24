@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,700' 
+  rel='stylesheet' type='text/css'>
+  <link href="/public/css/all.css" rel="stylesheet"/>
+  <title>Supple</title>
+  <style>
+    body {
+      height: 600px;
+      width: 360px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .container-company-sides img {
+      border-radius: 100px;
+      width: 60%;
+    }
+
+    .icon img {
+      border-radius: 100px;
+      width: 25px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container-top">
+        <div class="icon">
+          <img src="images/icon.png">
+        </div>
+        <h2 style="text-align:center; font-size: 25px;">Rolling for Discounts...</h2>
+        <div class="top-symbols">
+          <i></i>
+        </div>
+      </div>
+    
+    <video width="320" height="240" autoplay muted style="text-align: center; padding-left: 23px;">
+        <source src="amazon Discount.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div>
+        <p id="hidden" style="text-align: center; font-size: 20px; display: none;">You won:</p>
+        <p id="myDIV" style="text-align: center; display: none; font-size: 16px;">20% Off Amazon Coupon!</p>
+        <a href="popup.html" id="home_button" style="text-align: center; display: none; text-decoration: none;">Home</p>
+    </div>
+
+    <div id="more_hidden" style="display: none;">
+        <div class="footer">
+            <div class="footer-container">
+              <a href="popup.html" class="footer-icons"><i class="fas fa-house-user"></i></a>
+                <a href="popup_balance.html" class="footer-icons"><i class="fas fa-box-open"></i></a>
+                <a href="popup_settings.html" class="footer-icons"><i class="fas fa-tools"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="won_items.js"></script>
+</body>
+</html>
