@@ -18,9 +18,22 @@
         height: 600px;
         width: 360px;
       }
+      .button {
+        background-color: white;
+        border: none;
+        color: black;
+        padding: 5px 5px;
+        margin: 2px 2px;
+        opacity: 0.6;
+        transition: 0.3s;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .button:hover {opacity: 1}
     </style>
 
     <script src="materials.js"></script>
+    <script src="popup_scripts.js"></script>
   </head>
 
   <body>
@@ -31,7 +44,7 @@
       </div>
       <p class="banner-top">Inventory</p>
       <div class="top-symbols">
-        <i class="fas fa-times-circle"></i>
+        <button id="close" class="button"><i class="fas fa-times-circle"></i></button>
       </div>
     </div>
     <div class="container-body">
