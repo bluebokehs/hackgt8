@@ -48,7 +48,18 @@ class Discount {
         company,
         percentage_off
     ) {
-
+        this.company = company;
+        this.percentage_off = percentage_off;
+        this.used = false;
+    }
+    getDiscCompany() {
+        return this.percentage_off = this.percentage_off;
+    }
+    getPercentOff() {
+        return this.percentage_off = this.percentage_off;
+    }
+    useDiscount() {
+        this.used = true;
     }
 }
 

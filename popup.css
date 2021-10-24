@@ -2,12 +2,6 @@
     height: 120px;
     width: 360px;
 }
-.container-top-left {
-    float: left;
-}
-.container-top-right {
-    float: right;
-}
 .button-menu {
     height: 40px;
     width: 340px;
