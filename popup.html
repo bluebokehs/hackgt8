@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="popup.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Supple</title>
-  <style>
-    body {
-      height: 600px;
-      width: 360px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  </style>
-</head>
-<body>
-  <!--Top of Home Page-->
-  <div class="container-top" style="text-align: center;">
-    <p class="titlehead">Supple</p>
-  </div>
-  <div class="button-menu" style="float: left;">
-    <a href="popup_daily.html">Daily Rewards</a>
-    <a href="popup_balance.html" style="float: right;">Storage</a>
-  </div>
-
-  <!--Stores-->
-  <div class="container-body" style="text-align: center;">
-    <!--Container for single store-->
-    <div class="store-div">
-      <!--Image Icon-->
-      <a style="text-decoration: none;" href="">
-        <img alt="Amazon" src="images/amazon.png" width="20" height="20">
-        Amazon
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,700' 
+  rel='stylesheet' type='text/css'>
+    <link href="/public/css/all.css" rel="stylesheet" />
+    <!--load all styles -->
+    <title>Supple</title>
+    <style>
+      body {
+        height: 600px;
+        width: 360px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Top of Home Page-->
+    <div class="container-top">
+      <div class="top-symbols">
+        <i class="fas fa-circle"></i>
+      </div>
+      <p class="banner-top">Daily Bonus Active</p>
+      <div class="top-symbols">
+        <i class="fas fa-times-circle"></i>
+      </div>
+    </div>
+    <div class="container-company">
+      <div class="container-company-sides">
+        <span class="container-company-circle"
+          ><div class="container-company-icon-1">
+            <i class="fab fa-amazon"></i></div
+        ></span>
+      </div>
+      <div class="container-company-mid">
+        <h5 class="container-company-bold">Amazon</h5>
+        <h5>3 Boxes <mark class="light">: 2 Keys</mark></h5>
+      </div>
+      <div class="container-company-sides">
+        <span class="container-company-circle cright"><div class="container-company-icon-2">
+          <i class="fas fa-box-open"></i></div
+      ></span>
+      </div>
     </div>
 
-    <div class="store-div">
-      <a style="text-decoration: none;" href="">
-        <img alt="Target" src="images/target.png" width="20" height="20">
-        Target
-      </a>
+    <!--
+    <div class="button-menu" style="float: left">
+      <a href="popup_daily.html">Daily Rewards</a>
+      <a href="popup_balance.html" style="float: right">Items</a>
+    </div>
+    -->
+
+    <!--Stores-->
+    <div class="container-body">
+      <div class="company-banner">
+        <p>Recieve a chance to earn a box and key when you make any purchase from Amazon!</p>
+        <div class="container-body-symbols">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="number">100%</div>
+        <div class="circle">
+           <div class="bar left">
+              <div class="progress"></div>
+           </div>
+           <div class="bar right">
+              <div class="progress"></div>
+           </div>
+         </div>
+      </div>
+      <h3>Earn exclusive rewards from Supple.</h3>
     </div>
 
-    <div class="store-div">
-      <a style="text-decoration: none;" href="">
-        <img alt="Kohl's" src="images/khols.png" width="20" height="20">
-        Khol's
-      </a>
+    <!--General and global footer-->
+    <div class="balance">
+      <h3>Supple Balance:</h3>
+      <h3 class="balance-keys">2 Keys</h3>
     </div>
 
-    <div class="store-div">
-      <a style="text-decoration: none;" href="">
-        <img alt="Walmart" src="images/walmart.png" width="20" height="20">
-        Walmart
-      </a>
+    <div class="footer">
+      <div class="footer-container">
+        <a href="popup.html" class="footer-icons"><i class="fas fa-house-user"></i></a>
+      <a href="popup_balance.html" class="footer-icons"><i class="fas fa-box-open"></i></a>
+      <a href="popup_settings.html" class="footer-icons"><i class="fas fa-tools"></i></a>
+      </div>
     </div>
-
-    <div class="store-div">
-      <a style="text-decoration: none;" href="">
-        <img alt="McDonald's" src="images/mcdonalds.png" width="20" height="20">
-        McDonald's
-      </a>
-    </div>
-
-    <div class="store-div">
-      <a style="text-decoration: none;" href="">
-        <img alt="Chick-fil-a" src="images/chickfila.png" width="20" height="20">
-        Chick-fil-a
-      </a>
-    </div>
-  </div>
-
-  <!--Display for Balance-->
-  <div class="balance" style="text-align: center;">
-    <p>Supple Balance: X Total Keys</p>
-  </div>
-
-  <!--General and global footer-->
-  <div class="footer" style="text-align: center;">
-    <a href="popup_balance.html">Balance</a>
-    <a href="popup.html">Home</a>
-    <a href="popup_settings.html">Settings</a>
-  </div>
-  <script src="popup.js"></script>
-</body>
+    <script src="popup.js"></script>
+  </body>
 </html>
