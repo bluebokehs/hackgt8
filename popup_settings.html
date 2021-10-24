@@ -6,27 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="popup.css">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:400,400italic,700' 
+  rel='stylesheet' type='text/css'>
   <link href="/public/css/all.css" rel="stylesheet"/>
   <title>Supple</title>
   <style>
     body {
       height: 600px;
       width: 360px;
-      margin-left: 10px;
-      margin-right: 10px;
+    }
+
+    .container-company-sides img {
+      border-radius: 100px;
+      width: 60%;
+    }
+
+    .icon img {
+      border-radius: 100px;
+      width: 25px;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align: center;">Account and Settings</h1>
-  <div class="account-tab">
-    <a href="">Account Details</a>
+  <div class="container-top">
+    <div class="icon">
+      <img src="images/icon.png">
+    </div>
+    <p class="banner-top">Settings</p>
+    <div class="top-symbols">
+      <i class="fas fa-times-circle"></i>
+    </div>
   </div>
-  <div class="settings">
-    <a href="">Settings</a>
+  <div class="container-company">
+    <div class="container-company-sides">
+      <img src="images/klaus.png">
+    </div>
+    <div class="container-company-mid">
+      <h3>Chris Klaus</h3>
+    </div>
   </div>
-  <div class="logout">
-    <a href="popup.html">Logout</a>
+
+  <div class="container-body-settings">
+    <div class="settings">
+      <div class="option">
+        <h3>First Name</h3>
+        <p>Chris</p>
+      </div>
+      <div class="option">
+        <h3>Last Name</h3>
+        <p>Klaus</p>
+      </div>
+      <div class="option">
+        <h3>Email</h3>
+        <p>cklaus@gmail.com</p>
+      </div>
+      <div class="option-last">
+        <h3>More</h3>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+    <div class="settings">
+      <div class="option">
+        <h3>Terms & Conditions</h3>
+        <i class="fas fa-angle-right"></i>
+      </div>
+      <div class="option-last">
+        <h3>Rate Supple</h3>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="balance">
+    <h3>Supple Balance:</h3>
+    <a href="popup_balance.html" style="text-decoration: none;"><h3 class="balance-keys">2 Keys</h3></a>
   </div>
 
 
