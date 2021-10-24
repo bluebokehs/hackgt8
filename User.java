@@ -1,20 +1,28 @@
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
-public class User {
+
+import javax.swing.Box;
+public class User{
 
     private int userID;
-    private ArrayList<Box> boxes;
-    private ArrayList<Key> keys;
+    private Box[] boxes;
+    private Key[] keys;
     private String username;
 
-    public User(int userID, ArrayList<Box> boxes, ArrayList<Key> keys, String username) {
+    public User(int userID, Box[] boxes, Key[] keys, String username) {
         this.userID = userID;
-        this.boxes = boxes;
-        this.keys = keys;
+        for (int i = 0; i < 10; i++) {
+            this.boxes[i] = boxes[i];
+        }
+        for (int i = 0; i < 10; i++) {
+            this.keys[i] = keys[i];
+        }
+        //this.boxes = boxes;
+        //this.keys = keys;
         this.username = username;
     }
 
-    public void addBox(Box box) {
+    /*public void addBox(Box box) {
         boxes.add(box);
     }
 
@@ -28,21 +36,19 @@ public class User {
 
     public void removeKey(Key key) {
         keys.remove(key);
-    }
+    }*/
 
     public String redeemBox(String name) {
         Box r = null;
-        for(int i = 0; i < boxes.size(); i++) {
-            if (boxes.get(i).getName().equals(name)) {
-                r = boxes.get(i);
-                boxes.remove(i);
-                System.out.printl("4");
+        for(int i = 0; i < boxes.length; i++) {
+            if (boxes[i].getName().equals(name)) {
+                r = boxes[i];
+                //boxes.remove(i);
                 break;
             }
         }
-        if (r == null && keys.get(0) != null) {
-            System.out.println("3");
-            randomReward(name);
+        if (r.getName().equals(name)) {
+            return randomReward(name);
         }
         return null;
     }
@@ -63,6 +69,6 @@ public class User {
 
     public String getName(int index) {
 
-        return this.boxes.get(index).getName();
+        return this.boxes[index].getName();
     }
 }

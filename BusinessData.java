@@ -10,7 +10,6 @@ public class BusinessData {
     }
 
     public String getName() {
-        System.out.println("1");
         return name;
     }
 }
