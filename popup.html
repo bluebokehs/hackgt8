@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="popup.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Cabin:400,400italic,700"
+      href="https://fonts.googleapis.com/css?family=Cabin:400,400italic,700&family=Sedgwick+Ave&display=swap"
       rel="stylesheet"
       type="text/css"
     />
     <link href="/public/css/all.css" rel="stylesheet" />
     <!--load all styles -->
+>>>>>>> Stashed changes
     <title>Supple</title>
     <style>
-      body {
-        height: 600px;
-        width: 360px;
-      }
-      .button {
-        background-color: white;
-        border: none;
-        color: black;
-        padding: 5px 5px;
-        margin: 2px 2px;
-        opacity: 0.6;
-        transition: 0.3s;
-        display: inline-block;
-        cursor: pointer;
-      }
-      .button:hover {opacity: 1}
+        body {
+            height: 600px;
+            width: 360px;
+            padding: 0;
+            margin: 0;
+        }
     </style>
+<<<<<<< Updated upstream
+</head>
+<body>
+    <div class="container">
+        <h2>Suppl</h2>
+=======
   </head>
   <body>
     <!--Top of Home Page-->
     <div class="container-top">
-      <div class="top-symbols">
-        <i></i>
+      <div class="icon">
+        <img src="images/icon.png">
       </div>
       <p class="banner-top">Daily Bonus Active</p>
-      <div class="top-symbols">
-        <button id="close" class="button"><i class="fas fa-times-circle"></i></button>
-      </div>
+      <a href="#" id="exit" class="top-symbols">
+        <i class="fas fa-times-circle"></i>
+      </a>
     </div>
     <div class="container-company">
       <div class="container-company-sides">
@@ -57,12 +60,10 @@
       </div>
       
       <div class="container-company-sides">
-        <a href="popup_balance.html">
-        <span style="margin-top: -20px; margin-left: -10px;" class="container-company-circle cright"
+        <span class="container-company-circle cright"
           ><div class="container-company-icon-2">
             <i class="fas fa-box-open"></i></div
         ></span>
-      </a>
       </div>
       
     </div>
@@ -71,9 +72,11 @@
     <div class="container-body">
       <div class="company-banner" id="myDIV">
         <p>Receive a chance to earn a box and key when you make any purchase from Amazon!</p>
-        <div class="container-body-symbols">
-          <a id="link"><i class="fas fa-times"></i></a>
+        <div class="container-body-symbols" id="link"><i class="fas fa-times"></i>
         </div>
+      </div>
+      <div class="below-banner">
+        <h3>Supple</h3>
       </div>
       <div class="circular">
         <div class="inner"></div>
@@ -109,7 +112,8 @@
           ><i class="fas fa-tools"></i
         ></a>
       </div>
+>>>>>>> Stashed changes
     </div>
     <script src="popup.js"></script>
-  </body>
+</body>
 </html>
