@@ -1,9 +1,3 @@
-<<<<<<< Updated upstream
-.h2 {
-  text-align: center;
-  padding: auto;
-}
-=======
 * {
   --circleSize: 220px;
 }
@@ -317,13 +311,23 @@ mark.light {
 
 .circular .number {
   position: absolute;
-  top: 50%;
+  top: 82%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
   font-size: 18px;
   font-weight: 500;
   color: #56adec;
+}
+
+.circular .midImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--circleSize) / 2);
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .circular .bar {
@@ -371,4 +375,3 @@ mark.light {
     transform: rotate(180deg);
   }
 }
->>>>>>> Stashed changes

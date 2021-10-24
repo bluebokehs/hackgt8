@@ -17,9 +17,9 @@ const images = [
   },
   {
     id: 3,
-    company: "Walmart",
+    company: "Chickfila",
     num: 2,
-    imgSrc: "images/walmart_box.png",
+    imgSrc: "images/cfa_box.png",
     vhref: "popup_video3.html"
   },
 ];
