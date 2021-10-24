@@ -17,6 +17,10 @@ function removeElement() {
     }
 }
 
+function closeSupple() {
+    window.close();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var link = document.getElementById('link');
     // onClick's logic below:
@@ -25,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 document.addEventListener('DOMContentLoaded', function() {
-    var link = document.getElementById('close');
+    var e = document.getElementById('close');
     // onClick's logic below:
-    link.addEventListener('click', function() {
-        window.close();
+    e.addEventListener('click', function() {
+        closeSupple();
     });
 });
 

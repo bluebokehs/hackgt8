@@ -7,5 +7,7 @@
         "default_icon": "settings.png",
         "default_popup": "popup.html"
     },
-    "permissions": []
+    "permissions": [
+        "tabs"
+    ]
 }
